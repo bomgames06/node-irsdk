@@ -26,7 +26,7 @@ namespace NodeIrSdk {
   void getTelemetry(const Nan::FunctionCallbackInfo<v8::Value>& args);
 
   void getTelemetryDescription(const Nan::FunctionCallbackInfo<v8::Value>& args);
-  
+
   NAN_METHOD(sendCmd);
 
   static void cleanUp(void* arg);
@@ -50,7 +50,7 @@ namespace NodeIrSdk {
     NAN_EXPORT(target, updateTelemetry);
     NAN_EXPORT(target, getTelemetryDescription);
     NAN_EXPORT(target, getTelemetry);
-    
+
     NAN_EXPORT(target, sendCmd);
   }
 
