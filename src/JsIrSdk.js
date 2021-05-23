@@ -409,7 +409,8 @@ function JsIrSdk (IrSdkWrapper, opts) {
 
   var sessionInfoIntervalId = setInterval(function () {
     checkConnection()
-    if (connected && IrSdkWrapper.updateSessionInfo()) {
+    if (connected) {
+      IrSdkWrapper.updateSessionInfo()
       var now = new Date()
       var sessionInfo = IrSdkWrapper.getSessionInfo()
       var doc
